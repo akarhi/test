@@ -291,25 +291,25 @@ public class damagecounter extends Plugin
 		{
 			MessageDamage = "Well done carrying the fucking boulders in your team! " +
 					"WOWIE!! You did" + DAMAGEFORMAT.format(DamageCount) + " damage to " +
-					actor.getName() + "! You did %" + String.format("%.2f", percent) + " of the damage";
+					actor.getName() + "! You did " + String.format("%.2f", percent) + "% of the damage";
 		}
 		else if (percent >= 25)
 		{
 			MessageDamage = "Well done carrying some dead weight in your team! " +
 					"Awesome! You did " + DAMAGEFORMAT.format(DamageCount) + " damage to " +
-					actor.getName() + "! You did %" + String.format("%.2f", percent) + " of the damage";
+					actor.getName() + "! You did " + String.format("%.2f", percent) + "% of the damage";
 		}
 		else if (percent >= 1)
 		{
 			MessageDamage = "Well done everyone is pulling their weight! " +
 					"You did " + DAMAGEFORMAT.format(DamageCount) + " damage to " +
-					actor.getName() + "! You did %" + String.format("%.2f", percent) + " of the damage";
+					actor.getName() + "! You did " + String.format("%.2f", percent) + "% of the damage";
 		}
 		else
 		{
 			MessageDamage = "FUCKING LEECH GET THE FUCK OUT OF HERE! " +
 					"Fucking leech did " + DAMAGEFORMAT.format(DamageCount) + " damage to " +
-					actor.getName() + "! You did %" + String.format("%.2f", percent) + " of the damage";
+					actor.getName() + "! You did " + String.format("%.2f", percent) + "^ of the damage";
 		}
 
 		sendChatMessage(MessageDamage);
